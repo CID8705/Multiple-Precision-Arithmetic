@@ -198,7 +198,7 @@ MPA m_round(MPA a, int n)
 	MPA t;
 	char s[15];
 
-	sprintf(s, "+1.0e%d\0", n);
+	sprintf_s(s, _countof(s), "+1.0e%d\0", n);
 	t = m_set_a(s);
 	return m_mul(m_int(m_add(m_div(a, t), m_set_a("0.5"))), t);
 }

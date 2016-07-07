@@ -1,12 +1,13 @@
 /*		mpa_d.h		*/
 #ifdef		_MPA
-
+#define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
 #include <time.h>
-#include <values.h>
+#include <float.h>
+#include <math.h>
 /*
 		NMPA1 = NMPA + 1
 		NMPA2 = NMPA1 * 2

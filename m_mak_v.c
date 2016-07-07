@@ -87,7 +87,7 @@ MPA ln2(void)
 {
 	MPA s, t, u, x;
 	int k;
-
+	u = m_set_l(0);
 	x = m_div_s(_M1, 9);
 	s = t = m_div_s(m_set_l(2L), 3);
 	k = 3;
@@ -108,7 +108,7 @@ MPA ln625(void)
 {
 	MPA s, t, u, x;
 	int k;
-
+	u = m_set_l(0);
 	x = m_div_s(m_set_l(9L), 169);
 	s = t = m_div_s(m_set_l(-6L), 13);
 	k = 3;
@@ -128,7 +128,7 @@ MPA ln75(void)
 {
 	MPA s, t, u, x;
 	int k;
-
+	u = m_set_l(0);
 	x = m_inv(m_set_l(49L));
 	s = t = m_inv(m_set_a("-3.5"));
 	k = 3;

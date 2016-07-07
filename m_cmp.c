@@ -52,7 +52,7 @@ int m_cmp_s(MPA a, double b)
 {
 	char s[30];
 
-	sprintf(s, "%25.18e", b);
+	sprintf_s(s, _countof(s), "%25.18e", b);
 	return m_cmp(a, m_set_a(s));
 }
 

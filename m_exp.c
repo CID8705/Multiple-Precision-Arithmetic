@@ -66,7 +66,7 @@ MPA m_log(MPA x)
 	a = 0;
 	for(k = NMPA, p = x.num + k, q = t.num + k; k >= 0; k--)
 	{
-		a = - (*p-- + a);
+		a = -1 * (*p-- + a);
 		*q-- = (UINT)a & RADIX1;
 		a = (a >>= RADIXBITS) & 1;
 	}

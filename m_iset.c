@@ -11,12 +11,12 @@ double m_iset(MPA a)
 	if(a.exp > 68)
 	{
 		fprintf(stderr, "Warning : Overflow in m_iset()\n");
-		return MAXDOUBLE;
+		return DBL_MAX;
 	}
 	if(a.exp < -68)
 	{
 		fprintf(stderr, "Warning : Underflow in m_iset()\n");
-		return MINDOUBLE;
+		return DBL_MIN;
 	}
 	while(a.num[0] == 0)
 	{
